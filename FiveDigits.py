@@ -1,16 +1,30 @@
 # Input a 5 digits number from user, print its individual digits logically (without using loops, string indexing etc. )
+import math
 
 def five_digits():
   
   try:
-    str_num = str(input("Please enter a number.\n"))
+    num = int(input("Please enter a number.\n"))
 
-    if len(str_num) != 5:
-      raise 
-    else:
-      print(f" {str_num[0]} |  {str_num[1]} |  {str_num[2]} |  {str_num[3]} |  {str_num[4]} " )
-      
+    print("")
+    
+    if len(str(num)) != 5:
+      raise
+
+    print( math.floor((num - (math.floor(num / 100000) * 100000)) /10000))
+
+    print( math.floor((num - (math.floor(num / 10000) * 10000)) /1000))
+
+    print( math.floor((num - (math.floor(num / 1000) * 1000)) /100))
+
+    print( math.floor((num - (math.floor(num / 100) * 100)) /10))
+
+    print( num - (math.floor(num / 10) * 10))
+
   except:
-    print("Invalid length, please use a number with 5 digits ")
+    print("Invalid length of number - Must be five digits")
+
+      
+
 
   

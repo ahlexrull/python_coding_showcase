@@ -7,3 +7,13 @@ def reverse_arr(arr):
     rev_arr.insert(0, ele)
   
   return rev_arr
+
+def reverse_arr_alt(arr):
+  rev_arr = []
+  
+  i = -1
+  while i >= len(arr) * -1:
+    rev_arr.append(arr[i])
+    i -= 1
+
+  return rev_arr
