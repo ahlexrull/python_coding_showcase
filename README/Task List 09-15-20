@@ -1,0 +1,9 @@
+- DONE: (See FiveDigits.py) Input a 5 digits number from user, print its individual digits logically (without using loops, string indexing etc. )
+
+- DONE: (See ReverseArray.py )Given an array of length 10, reverse the array without using built-in reverse method. 
+
+- DONE: (See Pyramid.py )Input a number, have your program draw a pyramid on screen of that much levels. 
+Example for 3 levels:
+  *
+ **
+***

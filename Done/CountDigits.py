@@ -1,6 +1,6 @@
 # - Write a C program to count number of digits in a number.
 
-#Note this is just for whole numbers, kindly use count_digits_f for float numbers
+#Note count_digits is just for whole numbers, kindly use count_digits_f for float numbers
 
 def count_digits(num):
   return len(str(num))
